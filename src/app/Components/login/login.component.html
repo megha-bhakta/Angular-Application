@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+<span class="flex-spacer"></span>
+<button mat-button mat-dialog-close>&times;</button>
+</mat-toolbar>
+
+<form (ngSubmit)="onSubmit()">
+  <mat-dialog-content>
+    <p>
+      <mat-form-field>
+        <input matInput placeholder="Username" type="text" name="username" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Password" type="password" name="password" required>
+      </mat-form-field>
+
+    </p>
+
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button type="submit">Login</button>
+</mat-dialog-actions>
+</form>
