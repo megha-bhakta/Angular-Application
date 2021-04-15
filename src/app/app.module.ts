@@ -16,6 +16,7 @@ import { MatDialogModule} from '@angular/material/dialog';
 import { MatButtonModule} from '@angular/material/button';
 import { MatFormFieldModule} from '@angular/material/form-field';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { HttpClient} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     MatButtonModule,
     MatFormFieldModule,
     BrowserAnimationsModule,
+    HttpClient,
     RouterModule.forRoot(routes)
   ],
   providers: [],
